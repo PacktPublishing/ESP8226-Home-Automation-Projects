@@ -1,0 +1,35 @@
+<!--home.html -->
+<div ng-controller="ramController">
+
+<div class= "row" ng-repeat="ram in myacc_collection">
+
+
+ <table border=0 class = "table table-condensed"> 
+      <tr>
+         <td >
+            <canvas ng-attr-id="{{ 'canvas_' + ram.acc_id }}" width="900" height="282"></canvas>
+
+         </td>         
+     </tr>
+     <tr>
+         <td ><div>
+          <button type="button" class="btn btn-primary" style="margin-right: 3px;" ng-click="sendResetModule(ram.acc_id)">Reboot ESP8266</button> 
+          <button type="button" class="btn btn-primary" style="margin-right: 3px;" ng-click="sendInitModule(ram.acc_id)">Reinit ESP8266</button>   
+         </div></td>
+     </tr>
+ </table> 
+
+
+</div>
+
+<div id="main_id"></div>
+<div row>
+</div>
+<div class="row">
+
+    <div class="col-xs-12">
+
+</div>
+</div> <!-- end div controller-->
+
+

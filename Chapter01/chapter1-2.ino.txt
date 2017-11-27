@@ -1,0 +1,30 @@
+#define LDR     A0
+#define BUTTON   4
+#define RED     15
+#define GREEN   12
+#define BLUE    13
+
+void setup() 
+{
+    Serial.begin(115200);
+
+    pinMode(LDR, INPUT);
+    pinMode(BUTTON, INPUT);
+    pinMode(RED, OUTPUT);
+    pinMode(GREEN, OUTPUT);
+    pinMode(BLUE, OUTPUT);
+}
+
+void loop()
+{
+    Serial.print("LDR: ");
+    Serial.println(analogRead(LDR));
+    Serial.print("BUTTON: ");
+    Serial.println(digitalRead(BUTTON));
+ 
+    analogWrite(RED,   random(0,1023));
+    analogWrite(GREEN, random(0,1023));
+    digitalWrite(BLUE, HIGH);
+    delay(1000);
+    digitalWrite(BLUE, LOW);
+}

@@ -1,0 +1,70 @@
+#include <ESP8266WiFi.h>
+#include <JsonListener.h>
+#include "WundergroundClient.h"
+
+const String  WUNDERGRROUND_API_KEY = "YOUR_API_KEY";
+const boolean IS_METRIC = true;
+
+WundergroundClient weather_data(IS_METRIC);
+const char* WIFI_SSID     = "YOUR_WIFI_SSID";
+const char* WIFI_PASSWORD = "YOUR_WIFI_PASSWORD";
+const String WUNDERGROUND_LANGUAGE = "EN";
+const String WUNDERGROUND_COUNTRY = "NL";
+const String WUNDERGROUND_CITY = "Eindhoven";
+WiFiClient wifiClient;
+
+void setup() {
+  Serial.begin(115200);
+  delay(10);
+  
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  delay(20);
+  Serial.print("Connecting to ");
+  Serial.println(WIFI_SSID);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected!");
+  Serial.println();
+}
+
+
+void loop() {
+
+  if ((millis() % (60 * 1000)) == 0) { 
+    Serial.println();
+    Serial.println("\n\nNext Loop-Step: " + String(millis()) + ":");
+
+    weather_data.updateConditions(WUNDERGRROUND_API_KEY, WUNDERGROUND_LANGUAGE, WUNDERGROUND_COUNTRY, WUNDERGROUND_CITY);
+
+    Serial.println("wundergroundHours: " + weather_data.getHours());
+    Serial.println("wundergroundMinutes: " + weather_data.getMinutes());
+    Serial.println("wundergroundSeconds: " + weather_data.getSeconds());
+    Serial.println("wundergroundDate: " + weather_data.getDate());
+
+    Serial.println("wundergroundMoonPctIlum: " + weather_data.getMoonPctIlum());
+    Serial.println("wundergroundMoonAge: " + weather_data.getMoonAge());
+    Serial.println("wundergroundMoonPhase: " + weather_data.getMoonPhase());
+    Serial.println("wundergroundSunriseTime: " + weather_data.getSunriseTime());
+    Serial.println("wundergroundSunsetTime: " + weather_data.getSunsetTime());
+    Serial.println("wundergroundMoonriseTime: " + weather_data.getMoonriseTime());
+    Serial.println("wundergroundMoonsetTime: " + weather_data.getMoonsetTime());
+    Serial.println("wundergroundWindSpeed: " + weather_data.getWindSpeed());
+    Serial.println("wundergroundWindDir: " + weather_data.getWindDir());
+
+    Serial.println("wundergroundCurrentTemp: " + weather_data.getCurrentTemp());
+    Serial.println("wundergroundTodayIcon: " + weather_data.getTodayIcon());
+    Serial.println("wundergroundTodayIconText: " + weather_data.getTodayIconText());
+    Serial.println("wundergroundMeteoconIcon: " + weather_data.getMeteoconIcon(weather_data.getTodayIconText()));
+    Serial.println("wundergroundWeatherText: " + weather_data.getWeatherText());
+    Serial.println("wundergroundHumidity: " + weather_data.getHumidity());
+    Serial.println("wundergroundPressure: " + weather_data.getPressure());
+    Serial.println("wundergroundDewPoint: " + weather_data.getDewPoint());
+    Serial.println("wundergroundPrecipitationToday: " + weather_data.getPrecipitationToday());
+
+    Serial.println();
+    Serial.println("---------------------------------------------------/\n");
+  }
+}

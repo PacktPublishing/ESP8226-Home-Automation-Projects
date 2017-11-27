@@ -1,0 +1,50 @@
+#include <ESP8266WiFi.h> 
+
+const char* WIFI_SSID     = "YOUR_WIFI_SSID";
+const char* WIFI_PASSWORD = "YOUR WIFI_PASSWORD";
+const char* host = "api.thingspeak.com";
+const char* writeAPIKey = "YOUR_WRITE_API_KEY";
+
+#define LDR     A0
+
+void setup() 
+{
+  Serial.begin(115200);
+  delay(10);
+  pinMode(LDR, INPUT);
+  WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+  delay(20);
+  Serial.print("Connecting to ");
+  Serial.println(WIFI_SSID);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("");
+  Serial.println("WiFi connected!");
+  Serial.println();
+}
+
+void loop()
+{
+  if ((millis() % (60 * 1000)) == 0) { 
+// make TCP connections
+  WiFiClient client;
+  const int httpPort = 80;
+  if (!client.connect(host, httpPort)) {
+    return;
+  }
+
+  String url = "/update?key=";
+  url+=writeAPIKey;
+  url+="&field1=";
+  url+=String(analogRead(LDR));
+  url+="\r\n";
+  Serial.println(url);
+  // Request to the server
+  client.print(String("GET ") + url + " HTTP/1.1\r\n" +
+               "Host: " + host + "\r\n" + 
+               "Connection: close\r\n\r\n");
+  }
+  
+}

@@ -1,0 +1,3 @@
+This code is available on the the GIthub...
+On https://github/bcatalin/demoapp is the code that we will use as the ESP8266 code.
+Get the code and write it to the ESP8266.

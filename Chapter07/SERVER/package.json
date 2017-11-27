@@ -1,0 +1,23 @@
+{
+  "name": "robojs",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt-nodejs": "latest",
+    "body-parser": "~1.15.2",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.4.3",
+    "crypto": "0.0.3",
+    "ejs": "~2.5.2",
+    "express": "~4.14.0",
+    "express-fileupload": "^0.1.2",
+    "express-session": "~1.14.1",
+    "formidable": "^1.1.1",
+    "influx": "^5.0.7",
+    "kalmanjs": "^1.0.0-beta",
+    "method-override": "~2.3.6",
+    "mongoose": "^4.9.8",
+    "morgan": "~1.7.0",
+    "smoothie": "^1.27.0",
+    "socket.io": "^1.7.3"
+  }
+}
