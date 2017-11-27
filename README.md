@@ -28,7 +28,7 @@ There are no codes for chapter 06.
 ## Related Products:
 * [ESP8266 Internet of Things Cookbook](https://www.packtpub.com/hardware-and-creative/esp8266-internet-things-cookbook?utm_source=github&utm_medium=repository&utm_content=9781787288102)
 
-* [Building Smart Drones with ESP8266 and Arduino] (hhttps://www.packtpub.com/hardware-and-creative/building-smart-drones-esp8266-and-arduino?utm_source=github&utm_medium=repository&utm_content=9781788477512)
+* [Building Smart Drones with ESP8266 and Arduino](https://www.packtpub.com/hardware-and-creative/building-smart-drones-esp8266-and-arduino?utm_source=github&utm_medium=repository&utm_content=9781788477512)
 
 * [ESP8266 Robotics Projects](https://www.packtpub.com/hardware-and-creative/esp8266-robotics-projects?utm_source=github&utm_medium=repository&utm_content=9781788474610)
 
