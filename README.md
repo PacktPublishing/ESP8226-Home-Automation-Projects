@@ -33,5 +33,5 @@ There are no codes for chapter 06.
 * [ESP8266 Robotics Projects](https://www.packtpub.com/hardware-and-creative/esp8266-robotics-projects?utm_source=github&utm_medium=repository&utm_content=9781788474610)
 
 ### Suggestions and Feedback
-[Click here](https://docs.google.com/forms/d/e/1FAIpQLScOhnQXxrOVR8ywMN3LSY5HqV6KY1eIO-7ibcn7tByTYb6jZQ/viewform?entry.1774016886=ESP8266+Home+Automation+Projects&entry.581534286&entry.1426568146&entry.276109720&entry.796406303&entry.1113837409&entry.591303334) if you have any feedback or suggestions.
+[Click here]() if you have any feedback or suggestions.
 
