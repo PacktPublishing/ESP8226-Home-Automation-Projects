@@ -23,7 +23,7 @@ The ESP8266 chip and its module, sensors like ADXL345, temperature sensors, PIR 
 For the software, we would require PC with Windows and VirtualBox installed. For application Arduino IDE with at least 1.5.3 SDK version for the ESP8266, Lubuntu Linux 16.04 installed in Virtual Box, Docker installed in Virtual Box, InfluxDB and Grafana installed in Virtual Box.
 
 ### Note:
-There are no codes for chapter 06.
+For further reference or help you can connect to author repository https://github.com/bcatalin.
 
 ## Related Products:
 * [ESP8266 Internet of Things Cookbook](https://www.packtpub.com/hardware-and-creative/esp8266-internet-things-cookbook?utm_source=github&utm_medium=repository&utm_content=9781787288102)
