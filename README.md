@@ -1,4 +1,4 @@
-# ESP8226_Home_Automation_Projects
+# ESP8226 Home Automation Projects
 This is the code repository for [ESP8226 Home Automation Projects](https://www.packtpub.com/hardware-and-creative/esp8266-home-automation-projects?utm_source=github&utm_medium=repository&utm_content=9781787282629), published by Packt. It contains all the supporting project files necessary to work through the book from start to finish.
 ## About the book
 The ESP8266 is a low-cost yet powerful Wi-Fi chip that is becoming more popular at an alarming rate, and people have adopted it to create interesting projects.
@@ -31,7 +31,4 @@ For further reference or help you can connect to author repository https://githu
 * [Building Smart Drones with ESP8266 and Arduino](https://www.packtpub.com/hardware-and-creative/building-smart-drones-esp8266-and-arduino?utm_source=github&utm_medium=repository&utm_content=9781788477512)
 
 * [ESP8266 Robotics Projects](https://www.packtpub.com/hardware-and-creative/esp8266-robotics-projects?utm_source=github&utm_medium=repository&utm_content=9781788474610)
-
-### Suggestions and Feedback
-[Click here]() if you have any feedback or suggestions.
 
