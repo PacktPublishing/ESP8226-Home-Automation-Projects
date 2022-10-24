@@ -32,3 +32,7 @@ For further reference or help you can connect to author repository https://githu
 
 * [ESP8266 Robotics Projects](https://www.packtpub.com/hardware-and-creative/esp8266-robotics-projects?utm_source=github&utm_medium=repository&utm_content=9781788474610)
 
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781787282629">https://packt.link/free-ebook/9781787282629 </a> </p>
